@@ -1,3 +1,44 @@
-body {
+@charset "utf-8";
+body{
+	background-color:gray
+}
 
+img {width: 400px}
+
+img{border-radius: 20px}
+
+@keyframes myAnimation {
+  from {width: 400px;}
+  to {width: 500px;}
+from{box-shadow: 0px 0px 0px}
+to{box-shadow: 0px 5px 10px black}
+}
+
+@keyframes bounceAnim{
+	from{transform: translateY(10px)}
+	to{transform: translateY(0)}
+}
+
+img:hover{
+animation-name: myAnimation;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+img:hover{
+	animation-name: bounceAnim;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+h3{color: crimson;
+	animation-name: bounceAnim;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	
+text-shadow: 2px 2px 5px darkred;
+	font-size: 50px
 }
